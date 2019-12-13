@@ -17,17 +17,17 @@
 
             <h1>gNumber - Gerador de Números</h1>
 
-            <div class="generator">
+            <div id="generator" class="generator">
                 <label>Informe a quantidade de números desejados</label>
-                <input type="text" id="inputNumber" placeholder="Digite o número aqui">
-                <button type="submit">GERAR</button>
+                <input type="text" id="qNumbers" placeholder="Digite o valor aqui">
+                <button type="submit" onclick="validate(qNumbers.value)">GERAR</button>
             </div>
 
             <div class="cards">
                 <div class="card random-numbers">
                     <label>Números Aleatórios</label>
-                    <div class="numbers">
-                        <label>1 - 2 - 6 - 4 - 8 - 6 - 2 - 6 - 4 - 8 - 6</label>
+                    <div id="random-numbers" class="numbers">
+                        <!-- <label>1 - 2 - 6 - 4 - 8 - 6 - 2 - 6 - 4 - 8 - 6</label> -->
                     </div>
                 </div>
 
