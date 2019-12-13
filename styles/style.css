@@ -1,4 +1,95 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100%;
+}
+
+.box {
+  font-family: Roboto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1024px;
+  background-color: #f2f6f5;
+  border-radius: 20px;
+  align-items: center;
+  padding: 40px 40px 50px;
+  box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.box h1 {
+  margin-bottom: 20px;
+  color: #fb9224;
+}
+
+.generator {
+  display: flex;
+  flex-direction: column;
+  height: 110px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.generator input {
+  height: 20px;
+  background: none;
+  border: 1px solid #dbd5b5;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.generator button {
+  padding: 10px 20px;
+  border: none;
+  background: #fb9224;
+  cursor: pointer;
+  border-radius: 6px;
+  max-width: 100px;
+  transition: 0.2s;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+}
+
+.generator button:hover {
+  border-radius: 15px;
+  transition: 0.2s;
+}
+
+.generator button:active {
+  border-radius: 15px;
+  width: 110%;
+}
+
+.cards {
+  margin-top: 30px;
+  min-height: 420px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e6e6e6;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.cards .card label {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.cards .numbers {
+  text-align: center;
+  margin-top: 10px;
 }
