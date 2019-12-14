@@ -49,5 +49,4 @@ function getIncreasingPairs(numbers){
 function _drawIn(divName, numbers) {
     let div = document.getElementById(`${divName}`);
     div.innerHTML = (numbers !== null ? numbers : null);
-    console.log('Nome da Div -> ' + divName);
 }
